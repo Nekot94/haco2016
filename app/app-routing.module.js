@@ -15,12 +15,16 @@ var heroes_component_1 = require('./heroes.component');
 var hero_detail_component_1 = require('./hero-detail.component');
 var simple_fight_component_1 = require('./simple-fight.component');
 var lesson_component_1 = require('./lesson.component');
+var inventory_component_1 = require('./inventory.component');
+var map_component_1 = require('./map.component');
 var routes = [
-    { path: '', redirectTo: '/fight', pathMatch: 'full' },
+    { path: '', redirectTo: '/map', pathMatch: 'full' },
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
-    { path: 'fight', component: simple_fight_component_1.SimpleFightComponent },
     { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent },
     { path: 'heroes', component: heroes_component_1.HeroesComponent },
+    { path: 'map', component: map_component_1.MapComponent },
+    { path: 'inventory', component: inventory_component_1.InventoryComponent },
+    { path: 'fight', component: simple_fight_component_1.SimpleFightComponent },
     { path: 'lesson', component: lesson_component_1.LessonComponent }
 ];
 var AppRoutingModule = (function () {

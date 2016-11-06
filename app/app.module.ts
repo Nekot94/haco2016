@@ -19,6 +19,13 @@ import { InMemoryDataService }  from './in-memory-data.service';
 
 import { SimpleFightComponent }  from './simple-fight.component';
 import { LessonComponent }  from './lesson.component';
+import { TopMenuComponent }  from './top-menu.component';
+import { FooterComponent }  from './footer.component';
+import { InventoryComponent }  from './inventory.component';
+import { MapComponent }  from './map.component';
+
+
+
 
 
 import './rxjs-extensions';
@@ -38,7 +45,11 @@ import './rxjs-extensions';
     HeroesComponent,
     HeroSearchComponent,
     SimpleFightComponent,
-    LessonComponent
+    LessonComponent,
+    TopMenuComponent,
+    FooterComponent,
+    InventoryComponent,
+    MapComponent
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]

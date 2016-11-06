@@ -1,32 +1,21 @@
-  <div class="main_container">
-    <header>
-      <nav>
-        <div class="main_nav">
-          <ul>
-            <li><a href="#">Персонаж</a></li>
-            <li><a href="#">Глобальная карта</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Достижения</a></li>
-          </ul>
-        </div>
-        <div class="right_nav">
-          <ul>Персонаж
-            <li><a href="#">Имя героя</a></li>
-            <li><a href="#">Настройки</a></li>
-            <li><a href="#">Выход</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="education_text">Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную. Для выполнения следующего задания необходимо объявить переменную.</div>
-      <div class="dialog">
-        <div>
-          <a href='/fight'>В бой!</a>
-        </div><img src="../images/python1--opt.png" alt="Советник" class="adviser">
-      </div>
-    </main>
-    <footer>
-      <div>2016</div>
-    </footer>
+<div class="main_container">
+  <my-top-menu></my-top-menu>
+  <main>
+    <div class="education_text">
+      {{learner.text}}
+    </div>
+<!--     <div class="dialog">
+      <div>
+        <a href='\fight'>В бой!</a>
+      </div><img src="../images/python1--opt.png" alt="Советник" class="adviser">
+    </div> -->
+   <div class="dialog">
+    <div><a href="#" title="Далее">Далее..</a><a href="#" title="Повторить с начала">Пожалуйся, повторите</a><a href="\fight" title="LET'S THE BATTLE BEGIN!" class="btn__begin_battle">В бой!</a></div><img src="../images/python1--opt.png" alt="Советник" class="adviser">
   </div>
+
+  </main>
+  <my-footer></my-footer>
+</div>
+
+
+ 

@@ -24,6 +24,10 @@ var angular_in_memory_web_api_1 = require('angular-in-memory-web-api');
 var in_memory_data_service_1 = require('./in-memory-data.service');
 var simple_fight_component_1 = require('./simple-fight.component');
 var lesson_component_1 = require('./lesson.component');
+var top_menu_component_1 = require('./top-menu.component');
+var footer_component_1 = require('./footer.component');
+var inventory_component_1 = require('./inventory.component');
+var map_component_1 = require('./map.component');
 require('./rxjs-extensions');
 var AppModule = (function () {
     function AppModule() {
@@ -44,7 +48,11 @@ var AppModule = (function () {
                 heroes_component_1.HeroesComponent,
                 hero_search_component_1.HeroSearchComponent,
                 simple_fight_component_1.SimpleFightComponent,
-                lesson_component_1.LessonComponent
+                lesson_component_1.LessonComponent,
+                top_menu_component_1.TopMenuComponent,
+                footer_component_1.FooterComponent,
+                inventory_component_1.InventoryComponent,
+                map_component_1.MapComponent
             ],
             providers: [hero_service_1.HeroService],
             bootstrap: [app_component_1.AppComponent]

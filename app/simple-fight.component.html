@@ -28,16 +28,15 @@
     <button *ngIf="started" (click)="attack()">Атаковать</button> 
 </div>
 
-<!-- <p>{{currentAnswer}}</p> -->
 <div class="lose" *ngIf="lose" style='color:red'>
     <p>Поражение</p>
-    <a routerLink="/fight" routerLinkActive="active">Заново</a>
-    <!-- <button class="restart" (click)="restart()">Заново</button> -->
+    <a href='/fight'>Заново</a>
+
 </div>
 <div class="win" *ngIf="win" style='color:green'>
     <p>Победа</p>
-    <a routerLink="/map" routerLinkActive="active" >Дальше</a>
-    <!-- <button class="next" (click)="goNext()">Дальше</button> -->
+    <a href='/map' >Дальше</a>
+
 
 </div>
 

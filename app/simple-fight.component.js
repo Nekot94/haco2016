@@ -58,7 +58,7 @@ var SimpleFightComponent = (function () {
         this.enemyPic = this.givePicPath(this.enemy.images, 1);
     };
     SimpleFightComponent.prototype.givePicPath = function (picture, number) {
-        return './imgs/' + picture + number + '.png';
+        return './images/' + picture + number + '.png';
     };
     SimpleFightComponent.prototype.startFight = function () {
         var _this = this;
@@ -113,22 +113,10 @@ var SimpleFightComponent = (function () {
     };
     SimpleFightComponent.prototype.youLose = function () {
         this.started = false;
-        // this.player = PLAYER;
-        // this.enemy = ENEMY;
         this.lose = true;
-        // console.warn(this.enemy);
-        // console.warn(this.player);
     };
     SimpleFightComponent.prototype.youWin = function () {
         this.win = true;
-        // this.player = PLAYER;
-        // this.enemy = ENEMY;
-        // console.warn(this.enemy);
-        // console.warn(this.player);
-    };
-    SimpleFightComponent.prototype.goNext = function () {
-        // let link = ['/map'];
-        // this.router.navigate(link);
     };
     SimpleFightComponent.prototype.restart = function () {
         var link = ['/fight'];

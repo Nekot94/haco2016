@@ -82,7 +82,7 @@ export class SimpleFightComponent implements OnInit {
 
 
   givePicPath(picture, number): string {
-    return './imgs/' + picture  + number + '.png'
+    return './images/' + picture  + number + '.png'
   }
 
 
@@ -136,6 +136,7 @@ export class SimpleFightComponent implements OnInit {
       }
       this.currentQuestionNumber += 1;
 
+
     }
 
 
@@ -163,26 +164,16 @@ export class SimpleFightComponent implements OnInit {
 
   youLose(){
     this.started = false;
-    // this.player = PLAYER;
-    // this.enemy = ENEMY;
     this.lose = true;
-    // console.warn(this.enemy);
-    // console.warn(this.player);
+
   }
 
   youWin(){
     this.win = true;
-    // this.player = PLAYER;
-    // this.enemy = ENEMY;
-    // console.warn(this.enemy);
-    // console.warn(this.player);
-     
+
   }
 
-  goNext(){
-    // let link = ['/map'];
-    // this.router.navigate(link);
-  }
+
 
   restart(){
     let link = ['/fight'];

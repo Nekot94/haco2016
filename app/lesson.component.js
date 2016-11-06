@@ -11,21 +11,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var hero_service_1 = require('./hero.service');
+var LEARNER = {
+    id: 1,
+    text: 'Нет времени объяснять. Объявляй переменные. Что не умешь??? Ну, ты лох. я тебк не помогу'
+};
 var LessonComponent = (function () {
     function LessonComponent(router, heroService) {
         this.router = router;
         this.heroService = heroService;
+        this.learner = LEARNER;
     }
     LessonComponent.prototype.ngOnInit = function () {
-    };
-    LessonComponent.prototype.gotNext = function () {
-        var link = ['/fight', ''];
-        this.router.navigate(link);
     };
     LessonComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'my-dashboard',
+            selector: 'my-lesson',
             templateUrl: 'lesson.component.html',
             styleUrls: ['lesson.component.css']
         }), 

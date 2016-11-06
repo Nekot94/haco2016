@@ -7,14 +7,19 @@ import { HeroDetailComponent }  from './hero-detail.component';
 
 import { SimpleFightComponent }  from './simple-fight.component';
 import { LessonComponent }  from './lesson.component';
+import { InventoryComponent }  from './inventory.component';
+import { MapComponent }  from './map.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/fight', pathMatch: 'full' },
+  { path: '', redirectTo: '/map', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },
-  { path: 'fight',  component: SimpleFightComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
+
+  { path: 'map',     component: MapComponent },
+  { path: 'inventory',     component: InventoryComponent },
+  { path: 'fight',  component: SimpleFightComponent },
   { path: 'lesson',     component: LessonComponent }
 ];
 

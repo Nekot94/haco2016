@@ -2,5 +2,8 @@ export class Item {
     id: number;
     name: string;
     type: string;
-    weaponPower: number; 
+    parameter: string
+    power: number;
+    cost: number;
+    image: string;
 }
