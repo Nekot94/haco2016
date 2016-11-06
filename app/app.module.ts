@@ -23,6 +23,7 @@ import { TopMenuComponent }  from './top-menu.component';
 import { FooterComponent }  from './footer.component';
 import { InventoryComponent }  from './inventory.component';
 import { MapComponent }  from './map.component';
+import { AchivesComponent }  from './achives.component';
 
 
 
@@ -49,7 +50,8 @@ import './rxjs-extensions';
     TopMenuComponent,
     FooterComponent,
     InventoryComponent,
-    MapComponent
+    MapComponent,
+    AchivesComponent
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]

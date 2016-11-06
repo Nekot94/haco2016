@@ -65,9 +65,9 @@ nav > div {
   z-index: 1;
   height: 50px;
   padding-top: 19px;
-  color: #1f1f1f;
+  color: #fff;
   text-align: center;
-  background-color: #95a5a6;
+  background-color: #29b765;
   font-size: 16px;
   font-family: Cuprum, sans-serif;
 }
@@ -80,11 +80,12 @@ nav > div {
 .right_nav ul:hover li {
   display: block;
   position: relative;
-  background-color: #95a5a6;
+  background-color: #29b765;
 }
 .right_nav ul:hover li a {
   display: block;
   padding: 20px 0;
+  color: #fff;
 }
 .right_nav ul:hover li:first-child {
   margin-top: 15px;

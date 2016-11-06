@@ -17,11 +17,13 @@ var simple_fight_component_1 = require('./simple-fight.component');
 var lesson_component_1 = require('./lesson.component');
 var inventory_component_1 = require('./inventory.component');
 var map_component_1 = require('./map.component');
+var achives_component_1 = require('./achives.component');
 var routes = [
     { path: '', redirectTo: '/map', pathMatch: 'full' },
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
     { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent },
     { path: 'heroes', component: heroes_component_1.HeroesComponent },
+    { path: 'achives', component: achives_component_1.AchivesComponent },
     { path: 'map', component: map_component_1.MapComponent },
     { path: 'inventory', component: inventory_component_1.InventoryComponent },
     { path: 'fight', component: simple_fight_component_1.SimpleFightComponent },

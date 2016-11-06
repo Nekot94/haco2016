@@ -28,6 +28,7 @@ var top_menu_component_1 = require('./top-menu.component');
 var footer_component_1 = require('./footer.component');
 var inventory_component_1 = require('./inventory.component');
 var map_component_1 = require('./map.component');
+var achives_component_1 = require('./achives.component');
 require('./rxjs-extensions');
 var AppModule = (function () {
     function AppModule() {
@@ -52,7 +53,8 @@ var AppModule = (function () {
                 top_menu_component_1.TopMenuComponent,
                 footer_component_1.FooterComponent,
                 inventory_component_1.InventoryComponent,
-                map_component_1.MapComponent
+                map_component_1.MapComponent,
+                achives_component_1.AchivesComponent
             ],
             providers: [hero_service_1.HeroService],
             bootstrap: [app_component_1.AppComponent]
