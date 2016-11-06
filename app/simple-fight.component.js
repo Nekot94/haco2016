@@ -71,8 +71,10 @@ var SimpleFightComponent = (function () {
         var timer = setInterval(function () {
             _this.damage(_this.enemy, _this.player);
             _this.playerPic = _this.givePicPath(_this.player.images, 2);
+            _this.enemyAnim = 'translateX(-50px)';
             setTimeout(function () {
                 _this.playerPic = _this.givePicPath(_this.player.images, 1);
+                _this.enemyAnim = 'translateX(50px)';
             }, 200);
             if (_this.win) {
                 clearInterval(timer);
@@ -90,14 +92,17 @@ var SimpleFightComponent = (function () {
         if (this.currentAnswer == this.currentQuestion.answer) {
             this.damage(this.player, this.enemy);
             this.enemyPic = this.givePicPath(this.enemy.images, 2);
+            this.playerAnim = 'translateX(50px)';
             setTimeout(function () {
                 _this.enemyPic = _this.givePicPath(_this.enemy.images, 1);
+                _this.playerAnim = 'translateX(-50px)';
             }, 200);
             if (this.enemy.health <= 0) {
                 this.youWin();
                 return;
             }
             this.currentQuestionNumber += 1;
+            this.currentAnswer = "";
         }
         this.takeQuestion(this.currentQuestionNumber);
         this.outputString = this.currentQuestion.question;

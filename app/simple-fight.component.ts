@@ -70,6 +70,9 @@ export class SimpleFightComponent implements OnInit {
   playerPic:string;
   enemyPic:string;
 
+  playerAnim;
+  enemyAnim;
+
   constructor(
     private router: Router,
     private heroService: HeroService) {
@@ -78,6 +81,7 @@ export class SimpleFightComponent implements OnInit {
   ngOnInit(): void {
     this.playerPic = this.givePicPath(this.player.images, 1);
     this.enemyPic = this.givePicPath(this.enemy.images, 1);
+
   }
 
 
@@ -98,8 +102,10 @@ export class SimpleFightComponent implements OnInit {
     var timer = setInterval(() => {
         this.damage(this.enemy,this.player)
         this.playerPic = this.givePicPath(this.player.images, 2);
+        this.enemyAnim = 'translateX(-50px)'
         setTimeout(() => {
           this.playerPic = this.givePicPath(this.player.images, 1);
+          this.enemyAnim = 'translateX(50px)'
         }, 200);
         if (this.win) {
           clearInterval(timer)
@@ -126,8 +132,10 @@ export class SimpleFightComponent implements OnInit {
     if (this.currentAnswer == this.currentQuestion.answer ){
       this.damage(this.player,this.enemy);
       this.enemyPic = this.givePicPath(this.enemy.images, 2);
+      this.playerAnim = 'translateX(50px)'
         setTimeout(() => {
           this.enemyPic = this.givePicPath(this.enemy.images, 1);
+          this.playerAnim = 'translateX(-50px)'
         }, 200);
       if (this.enemy.health <= 0) {  
         this.youWin();
@@ -135,6 +143,7 @@ export class SimpleFightComponent implements OnInit {
         return;
       }
       this.currentQuestionNumber += 1;
+      this.currentAnswer = "";
 
 
     }

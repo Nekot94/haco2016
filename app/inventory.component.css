@@ -251,6 +251,9 @@ main {
   color: #202020;
   text-align: center;
 }
+.inventory .inventory_items__deact {
+  display: none;
+}
 .inventory .inventory_shop {
   position: absolute;
   display: block;
@@ -258,7 +261,6 @@ main {
   right: 16px;
   width: 91%;
   height: 60px;
-  padding: 15px;
   border-radius: 5px;
   font-size: 30px;
   font-family: 'Cuprum', sans-serif;
@@ -309,6 +311,11 @@ main {
   color: #fff;
   text-align: center;
 }
+.inventory .inventory_shop__active h3:hover {
+    background-color: #2e7769;
+    color: #fff;
+}
+
 .inventory .inventory_shop__active .inventory_shop__items {
   width: calc(100% - 10px);
   height: 500px;
