@@ -5,7 +5,6 @@ import { DomSanitizer} from '@angular/platform-browser';
 
 import { Player } from './player';
 import { Item } from './item';
-import { HeroService } from './hero.service';
 
 
 const ITEMS: Item[] = [
@@ -68,7 +67,6 @@ export class InventoryComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private heroService: HeroService,
     private sanitizer: DomSanitizer) {
   }
 

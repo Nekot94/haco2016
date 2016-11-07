@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Player } from './player';
-import { HeroService } from './hero.service';
+
 
 
 @Component({
@@ -16,8 +16,7 @@ import { HeroService } from './hero.service';
 export class MapComponent implements OnInit {
 
   constructor(
-    private router: Router,
-    private heroService: HeroService) {
+    private router: Router) {
   }
 
   ngOnInit(): void {

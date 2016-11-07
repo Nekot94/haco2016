@@ -6,7 +6,6 @@ import { Player } from './player';
 import { Chalenge } from './chalenge';
 import { Question } from './question'
 
-import { HeroService } from './hero.service';
 
 
 const PLAYER = { 
@@ -74,8 +73,7 @@ export class SimpleFightComponent implements OnInit {
   enemyAnim;
 
   constructor(
-    private router: Router,
-    private heroService: HeroService) {
+    private router: Router) {
   }
 
   ngOnInit(): void {

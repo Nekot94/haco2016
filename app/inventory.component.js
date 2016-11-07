@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var platform_browser_1 = require('@angular/platform-browser');
-var hero_service_1 = require('./hero.service');
 var ITEMS = [
     { id: 1, name: 'Палка', cost: 1000, type: 'Оружие', image: 'weapon-1', parameter: "Сила", power: 5 },
     { id: 1, name: 'Палка', cost: 1000, type: 'Оружие', image: 'weapon-1', parameter: "Сила", power: 15 },
@@ -45,9 +44,8 @@ var PLAYER = {
     images: 'chuvachok'
 };
 var InventoryComponent = (function () {
-    function InventoryComponent(router, heroService, sanitizer) {
+    function InventoryComponent(router, sanitizer) {
         this.router = router;
-        this.heroService = heroService;
         this.sanitizer = sanitizer;
         this.isActive = true;
         this.player = PLAYER;
@@ -74,7 +72,7 @@ var InventoryComponent = (function () {
             templateUrl: 'inventory.component.html',
             styleUrls: ['inventory.component.css']
         }), 
-        __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService, platform_browser_1.DomSanitizer])
+        __metadata('design:paramtypes', [router_1.Router, platform_browser_1.DomSanitizer])
     ], InventoryComponent);
     return InventoryComponent;
 }());

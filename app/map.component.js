@@ -10,11 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var hero_service_1 = require('./hero.service');
 var MapComponent = (function () {
-    function MapComponent(router, heroService) {
+    function MapComponent(router) {
         this.router = router;
-        this.heroService = heroService;
     }
     MapComponent.prototype.ngOnInit = function () {
     };
@@ -25,7 +23,7 @@ var MapComponent = (function () {
             templateUrl: 'map.component.html',
             styleUrls: ['map.component.css']
         }), 
-        __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService])
+        __metadata('design:paramtypes', [router_1.Router])
     ], MapComponent);
     return MapComponent;
 }());

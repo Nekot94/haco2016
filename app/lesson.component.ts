@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 import { Player } from './player';
 import { Learner } from './learner';
-import { HeroService } from './hero.service';
+
 
 const LEARNER = {
   id: 1,
@@ -47,8 +47,7 @@ export class LessonComponent implements OnInit {
 
 
   constructor(
-    private router: Router,
-    private heroService: HeroService) {
+    private router: Router) {
   }
 
   ngOnInit(): void {

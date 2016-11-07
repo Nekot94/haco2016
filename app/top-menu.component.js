@@ -10,11 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var hero_service_1 = require('./hero.service');
 var TopMenuComponent = (function () {
-    function TopMenuComponent(router, heroService) {
+    function TopMenuComponent(router) {
         this.router = router;
-        this.heroService = heroService;
     }
     TopMenuComponent.prototype.ngOnInit = function () {
     };
@@ -25,7 +23,7 @@ var TopMenuComponent = (function () {
             templateUrl: 'top-menu.component.html',
             styleUrls: ['top-menu.component.css']
         }), 
-        __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService])
+        __metadata('design:paramtypes', [router_1.Router])
     ], TopMenuComponent);
     return TopMenuComponent;
 }());

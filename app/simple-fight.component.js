@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var hero_service_1 = require('./hero.service');
 var PLAYER = {
     id: 10,
     name: 'Магашка',
@@ -40,9 +39,8 @@ var QUESTIONS = [
     { id: 6, question: 'Объявите переменную a со значением -88', answer: 'a = -88' },
 ];
 var SimpleFightComponent = (function () {
-    function SimpleFightComponent(router, heroService) {
+    function SimpleFightComponent(router) {
         this.router = router;
-        this.heroService = heroService;
         this.enemy = ENEMY;
         this.player = PLAYER;
         this.questions = QUESTIONS;
@@ -135,7 +133,7 @@ var SimpleFightComponent = (function () {
             templateUrl: 'simple-fight.component.html',
             styleUrls: ['simple-fight.component.css']
         }), 
-        __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService])
+        __metadata('design:paramtypes', [router_1.Router])
     ], SimpleFightComponent);
     return SimpleFightComponent;
 }());

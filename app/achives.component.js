@@ -10,11 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var hero_service_1 = require('./hero.service');
 var AchivesComponent = (function () {
-    function AchivesComponent(router, heroService) {
+    function AchivesComponent(router) {
         this.router = router;
-        this.heroService = heroService;
     }
     AchivesComponent.prototype.ngOnInit = function () {
     };
@@ -25,7 +23,7 @@ var AchivesComponent = (function () {
             templateUrl: 'achives.component.html',
             styleUrls: ['achives.component.css']
         }), 
-        __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService])
+        __metadata('design:paramtypes', [router_1.Router])
     ], AchivesComponent);
     return AchivesComponent;
 }());
